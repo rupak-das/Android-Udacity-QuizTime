@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.rupak.android.quiztime.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/quiz">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            card_view:cardCornerRadius="14dp"
+            card_view:cardElevation="12dp">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/name_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="16dp"
+                        android:hint="Name"
+                        android:inputType="text"
+                        android:paddingLeft="10dp" />
+
+                    <TextView
+                        style="@style/NoteFont"
+                        android:text="NOTE: " />
+
+                    <TextView style="@style/NoteText" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Questions"
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/QuestionsFont"
+                        android:text="1. Grand Central Terminal, Park Avenue, New York is the world's :" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/a1"
+                            style="@style/AnswerFont"
+                            android:text="Largest Railway Station" />
+
+                        <RadioButton
+                            android:id="@+id/a2"
+                            style="@style/AnswerFont"
+                            android:text="Highest Railway Station" />
+
+                        <RadioButton
+                            android:id="@+id/a3"
+                            style="@style/AnswerFont"
+                            android:text="Longest Railway Station" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        style="@style/QuestionsFont"
+                        android:text="2. Entomology is the science that studies : " />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/b1"
+                            style="@style/AnswerFont"
+                            android:text="Insects" />
+
+                        <RadioButton
+                            android:id="@+id/b2"
+                            style="@style/AnswerFont"
+                            android:text="The formation of rocks" />
+
+                        <RadioButton
+                            android:id="@+id/b3"
+                            style="@style/AnswerFont"
+                            android:text="Behavior of human beings" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        style="@style/QuestionsFont"
+                        android:text="3. Eritrea, which became the 182nd member of the UN in 1993, is in the continent of :" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/c1"
+                            style="@style/AnswerFont"
+                            android:text="Asia" />
+
+                        <RadioButton
+                            android:id="@+id/c2"
+                            style="@style/AnswerFont"
+                            android:text="Africa" />
+
+                        <RadioButton
+                            android:id="@+id/c3"
+                            style="@style/AnswerFont"
+                            android:text="Australia" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        style="@style/QuestionsFont"
+                        android:text="4. Garampani sanctuary is located at: " />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/d1"
+                            style="@style/AnswerFont"
+                            android:text="Junagarh, Gujarat" />
+
+                        <RadioButton
+                            android:id="@+id/d2"
+                            style="@style/AnswerFont"
+                            android:text="Kohima, Nagaland" />
+
+                        <RadioButton
+                            android:id="@+id/d3"
+                            style="@style/AnswerFont"
+                            android:text="Diphu, Assam" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        style="@style/QuestionsFont"
+                        android:text="5. Hitler party which came into power in 1933 is known as" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/e1"
+                            style="@style/AnswerFont"
+                            android:text="Nazi Party" />
+
+                        <RadioButton
+                            android:id="@+id/e2"
+                            style="@style/AnswerFont"
+                            android:text="Ku-Klux-Klan" />
+
+                        <RadioButton
+                            android:id="@+id/e3"
+                            style="@style/AnswerFont"
+                            android:text="Labour Party" />
+
+                    </RadioGroup>
+
+
+                    <Button
+                        android:id="@+id/submit_button"
+                        style="@style/Button"
+                        android:background="@android:color/holo_green_dark"
+                        android:onClick="submitOnClick"
+                        android:text="Submit" />
+
+                    <TextView
+                        android:id="@+id/score_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:text="Score Details"
+                        android:textSize="16dp" />
+
+                    <CheckBox
+                        android:id="@+id/chk_box"
+                        style="@style/CheckBox"
+                        android:text="By clicking this Check Box , You agree to send your Score to your Email ID." />
+
+
+                    <Button
+                        android:id="@+id/done_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:onClick="doneOnClick"
+                        android:text="done" />
+
+                    <Button
+                        style="@style/Button"
+                        android:layout_marginBottom="35dp"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="30dp"
+                        android:background="@android:color/holo_red_dark"
+                        android:text="Reset"
+                        android:onClick="resetOnClick"/>
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
